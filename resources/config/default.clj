@@ -9,7 +9,7 @@
  :chrome-driver "/Users/mj/Downloads/chromedriver"
  :queues {:twitter-ids-queue "twitter.ids"
           :tweet-urls-queue "twitter.tweet_urls"}
- :twitter-bucket "twitter-lake"
+ :twitter-bucket "twitter"
  :rabbitmq {:host "localhost" :port 5672}
  :headless-browser? false
  :durable-queues? false}
