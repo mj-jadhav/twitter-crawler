@@ -143,6 +143,9 @@
 (defn insert-twitter-profile-info
   "Insert twitter profile to start crawling the tweets"
   [twitter-profile-link]
+  (settings/load-config)
+  (tcsp/init-pg (settings/get-config :twitter-postgres))
+  (tcuw/init-driver (settings/get-config :chrome-driver))
   (let [opt (ChromeOptions.)
         _ (when (settings/get-config :headless-browser?)
             (.addArguments ^ChromeOptions opt ["--headless"]))
