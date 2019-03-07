@@ -87,8 +87,9 @@ user> (in-ns 'twitter-crawler.twitter-scheduler)
 twitter-crawler.twitter-scheduler> (insert-twitter-profile-info "https://twitter.com/mayurJ13")
 ```
 
+**Demo**
 
-![](media/twitter-crawler-demo.gif)
+[![Watch the video](https://i9.ytimg.com/vi/vow6ZddjDkc/mq2.jpg?sqp=CJTCg-QF&rs=AOn4CLCTRPqXNvsdDlVFT1UxPpt1-9pMNA)](https://www.youtube.com/watch?v=vow6ZddjDkc)
 
 
 ## Architecture
